@@ -50,7 +50,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
   }
   
@@ -355,6 +355,9 @@
     object-fit: cover;
     border-radius: 10px;
   }
+
+
+  
 
   .card p{
     margin-top: 40px;
@@ -1046,7 +1049,7 @@ margin-bottom: 50px;
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   
 }
@@ -1144,7 +1147,6 @@ margin-bottom: 50px;
     background-size: cover;
     background-position: center;
     margin-bottom: 100px;
-    color: white;
   }
   
   .info-contenitore::before {
@@ -1154,7 +1156,7 @@ margin-bottom: 50px;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
   }
 

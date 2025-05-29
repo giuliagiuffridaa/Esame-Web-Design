@@ -1498,7 +1498,6 @@ font-size: 20px;
   width: 300px;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   background-size: cover;
 }
 
@@ -1519,7 +1518,6 @@ font-size: 20px;
 
 .card:hover {
   transform: scale(1.01);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   
 }
@@ -1529,14 +1527,14 @@ font-size: 20px;
   footer {
     background-color: #2b005f; 
     color: white;
-    padding: 10px 70px;
+    padding: 10px 60px;
     font-family: sans-serif;
     font-size: 14px;
 
   }
   
   footer h4 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-size: 14px;
   }
   
@@ -1547,6 +1545,9 @@ font-size: 20px;
     gap: 0;
   }
 
+  .footer-section{
+    width: 300px;
+  }
   
 }
 

@@ -96,20 +96,23 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 10px;
-  }
+      padding: 30px 40px;
+    }
+  
   
   
 
   
   .nav-bar {
     display: flex;
-    align-items: center;
     width: 100%;
-    margin-top: 40px;
-    padding: 0 65px;
+    margin-top: 10px;
+    padding-bottom: 10px;
     position: relative;
     gap: 46px;
+    margin: 0 auto ;
+    padding: 10px 40px;
+    align-items: center;
   }
   
 
@@ -120,15 +123,15 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
+    width: 95%;
     height: 1px;
     background-color: rgb(255, 255, 255);
   }
   
 
+
   .nav-bar p a{
     width: 100%;
-    max-width: 700px;
     margin: 0;
     font-size: 16px;
     margin-bottom: 10px;
@@ -731,7 +734,7 @@
   
 
   .nav-bar p a {
-    color: rgb(213, 213, 213);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 14px;
     margin: 0;
@@ -745,7 +748,7 @@
 }
 
 .nav-bar a {
-  color: rgb(213, 213, 213);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 14px;
   margin: 0;
@@ -764,13 +767,13 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   color: white;
 }
 
 .marchio {
-  height: 28px; 
+  height: 32px; 
   margin-right: 10px;
 }
   

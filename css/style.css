@@ -699,7 +699,7 @@
     margin-top: 20px;
     max-width: 700px;
     padding: 10px 30px;
-    gap: 12px;
+    gap: 18px;
     position: relative;
   }
 
@@ -788,7 +788,7 @@
   
 .content1 {
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 600px;
   margin-bottom: 10px;
   color: rgb(255, 255, 255);
 }
@@ -830,6 +830,7 @@
 .contenitore .testo{
   margin: 0 auto;
   width: 100%;
+  max-width: 450px;
   margin-top: 10px;
   margin-bottom: 50px;
   line-height: 1.3;
@@ -842,6 +843,7 @@
 .contenitore .titolo{
   margin: 0 auto;
   width: 100%;
+  max-width: 450px;
   margin-top: 90px;
   margin-bottom: 40px;
   padding: 0;
@@ -850,6 +852,7 @@
 .contenitore .titolo-card{
   margin: 0 auto;
   width: 100%;
+  max-width: 520px;
   margin-top: 190px;
   margin-bottom: 10px;
 }
@@ -861,6 +864,14 @@
  }
 
 
+  
+ .titolo{
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 400px;
+  padding: 0; 
+  margin-top: 100px;
+ }
 
 .testo h3{
   font-size: 20px;
@@ -869,7 +880,6 @@
 
 
 .testo p{
-  max-width: 500px;
   margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.5;
@@ -897,7 +907,6 @@
 .titolo{
   margin: 0 auto;
   margin-bottom: 20px;
-  max-width: 500px;
   padding: 0; 
   margin-top: 100px;
  }
@@ -921,13 +930,13 @@
     width: 100%;
     margin-bottom: 20px;
     margin-top: 50px;
-    max-width: 600px;
+    max-width: 500px;
     gap: 0;
   }
 
 
   .titolo-sticky{
-    max-width: 600px;
+    max-width: 500px;
     padding: 0;
     margin-bottom: 10px;
     position: static;
@@ -1086,7 +1095,7 @@ margin-bottom: 50px;
   font-family: sans-serif;
   border-radius: 10px;
   margin-bottom: 60px; 
-  max-width: 500px;
+  max-width: 300px;
 }
 
 

@@ -263,13 +263,9 @@
    
   .contenitore-blocco{
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 200px;
   }
 
-
-.contenitore-blocco img{
-  margin-bottom: 100px;
-}
 
   .testo p{
     margin-bottom: 20px;
@@ -384,16 +380,17 @@
   }
 
   .card p:hover{
-    color: #917edb; 
+    color: #a397c9; 
     transition: color 0.2s ease;
 
   }
   
   .card:hover {
-    transform: scale(1.01);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px #a397c9;
     cursor: pointer;
-    
+    transition: transform 0.3s ease;
+  
   }
   
   
@@ -413,15 +410,16 @@
     height: auto;
     display: block;
     object-fit: cover;      
-    max-height: 540px;
-    filter: brightness(70%);
-    margin-bottom: 100px;
+    max-height: 550px;
+    filter: brightness(80%);
   }
   
   .immagine-box:hover {
-    transform: scale(1.01);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.04);
+    box-shadow: 0 10px 16px #a397c9;
     cursor: pointer;
+    transition: transform 0.4s ease;
+
   }
   
 
@@ -957,7 +955,6 @@
     object-fit: cover;
     background-size: cover;
     margin-bottom: 100px;
-
   }
 
   
@@ -997,6 +994,35 @@
     line-height: 1.5;
     margin-bottom: 15px; 
     padding-left: 5px;
+  }
+
+
+
+
+  /* immaginegrande */
+  
+  .immagine-box {
+    width: 100%;         
+    overflow: hidden;
+    margin-top: 30px;
+  }
+  
+  .immagine-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;      
+    max-height: 540px;
+    filter: brightness(80%);
+    margin-bottom: 0;
+  }
+  
+  .immagine-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 10px #a397c9;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
   }
 
   
@@ -1071,7 +1097,6 @@ margin-bottom: 50px;
   width: 100%;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   background-size: cover;
 
 }
@@ -1088,10 +1113,11 @@ margin-bottom: 50px;
 }
 
 .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.06);
+  box-shadow: 0 4px 12px #a397c9;
   cursor: pointer;
-  
+  transition: transform 0.3s ease;
+
 }
 
   /* footer */
@@ -1164,7 +1190,7 @@ margin-bottom: 50px;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
   }
 
@@ -1385,6 +1411,41 @@ font-size: 20px;
 
 
 
+
+  /* immaginegrande */
+  
+  .immagine-box {
+    width: 100%;         
+    overflow: hidden;
+    margin-top: 30px;
+  }
+  
+  .immagine-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;      
+    max-height: 260px;
+    filter: brightness(80%);
+    margin-bottom: 0;
+  }
+  
+  .immagine-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 10px #a397c9;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+  }
+
+  .contenitore-blocco{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+
+
+
   .sticky {
     margin: 0 auto;
     flex-direction: column;
@@ -1533,7 +1594,6 @@ font-size: 20px;
   width: 300px;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   background-size: cover;
 }
 
@@ -1548,15 +1608,16 @@ font-size: 20px;
 }
 
 .card p a:hover{
-  color: #917edb; 
+  color: #a397c9; 
   transition: color 0.2s ease;
 }
 
 .card:hover {
-  transform: scale(1.01);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.06);
+  box-shadow: 0 4px 12px #a397c9;
   cursor: pointer;
-  
+  transition: transform 0.3s ease;
+
 }
 
 

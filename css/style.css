@@ -106,8 +106,9 @@
     align-items: flex-start;
     width: 100%;
     margin-top: 20px;
-    padding-bottom: 10px;
+    padding: 20px 60px;
     position: relative;
+    gap: 46px;
   }
   
 
@@ -124,10 +125,9 @@
   }
   
 
-  .nav-bar p {
+  .nav-bar p a{
     width: 100%;
     margin: 0;
-    margin-left: 5%; 
     font-size: 16px;
   }
   
@@ -141,7 +141,6 @@
     text-decoration: none;
     font-size: 16px;
     margin: 0;
-    margin-right: 5%; 
     font-weight: 700;
 
   }
@@ -200,7 +199,9 @@
     font-size: 32px;
   }
  
-
+  .testo-bar, .titolo-sticky, .contenuti-scrollabili p {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  }
   
   
   .image-contenitore {
@@ -424,7 +425,8 @@
   .box {
     width: 100%;         
     overflow: hidden;
-    margin-top: 40px;
+    margin-bottom: 100px;    
+
   }
   
   .box img {
@@ -432,11 +434,26 @@
     height: auto;
     display: block;
     object-fit: cover;      
-    max-height: 550px;
-    filter: brightness(60%)     
+    max-height: 540px;
+    filter: brightness(70%);
   }
   
+  .box2 {
+    width: 100%;         
+    overflow: hidden;
+    margin-top: 140px;
+    margin-bottom: 170px;    
 
+  }
+  
+  .box2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;      
+    max-height: 540px;
+    filter: brightness(70%);
+  }
 
   /* coppia */
   
@@ -445,11 +462,13 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     padding: 40px;
+    width: 100%;
     justify-items: center;
   }
   
 
   .coppia-immagini img{
+    width: 100%;
     max-width: 500px;
     margin-top: 150px;
     margin-bottom: 100px;
@@ -462,6 +481,7 @@
   
 .sticky {
   display: flex;
+  width: 100%;
   max-width: 1400px;
   align-items: flex-start;
   margin-bottom: 250px;
@@ -638,12 +658,6 @@
 
 
 
-
-
-
-
-
-
 /* responsive */
 
 
@@ -678,7 +692,8 @@
     width: 100%;
     max-width: 750px;
     margin-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 30px;
+    gap: 12px;
     position: relative;
   }
 
@@ -690,7 +705,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px 5px;
+    padding: 20px 10px;
     max-width: 750px;
   }
   
@@ -706,7 +721,6 @@
   text-decoration: none;
   font-size: 14px;
   margin: 0;
-  margin-right: 35px;
 }
 
 .nav-bar a:hover{
@@ -956,20 +970,23 @@
 
   
 /* coppia */
-  .coppia-immagini{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    padding: 20px;
-    justify-items: center;
-  }
-  
+.coppia-immagini {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 20px;
+  justify-items: center;
+}
 
-  .coppia-immagini img{
-    max-width: 250px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
+.coppia-immagini img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
  
   
 /* immagini */
@@ -1127,7 +1144,8 @@ margin-bottom: 50px;
     margin-top: 20px;
     padding-bottom: 10px;
     position: relative;
-    margin-right: 5px;
+    padding: 10px 20px;
+    gap: 10px;
   }
 
 
@@ -1153,7 +1171,6 @@ margin-bottom: 50px;
   font-size: 12px;
   margin: 0;
   padding: 0;
-  margin-right: 18px;
   flex-wrap: wrap;
 }
 
@@ -1164,7 +1181,6 @@ margin-bottom: 50px;
   font-size: 12px;
   margin: 0;
   padding: 0;
-  margin-right: 5%;
   flex-wrap: wrap;
 }
 
@@ -1317,7 +1333,6 @@ font-size: 20px;
   margin-top: 100px;
   margin-bottom: 40px;
   padding: 0;
-  color: #a397c9;
  }
 
   
@@ -1367,7 +1382,7 @@ font-size: 20px;
     margin: 0 auto;
     flex-direction: column;
     background-size: cover;
-    height: 250px;
+    height: 150px;
     object-fit: cover;
     background-size: cover;
     margin-bottom: 20px;
@@ -1449,8 +1464,8 @@ font-size: 20px;
 
   .card2 img {
     margin: 0 auto;
-    height: 200px;
-    width: 320px;
+    height: 150px;
+    width: 300px;
     object-fit: cover;
     background-size: cover;
     margin-bottom: 60px;
@@ -1483,7 +1498,7 @@ font-size: 20px;
 
 .card img {
   margin: 0 auto;
-  height: 200px;
+  height: 150px;
   width: 300px;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
@@ -1514,14 +1529,14 @@ font-size: 20px;
 }
 
 
+
   /* footer */
   footer {
     background-color: #2b005f; 
     color: white;
-    padding: 10px 60px;
+    padding: 10px 50px;
     font-family: sans-serif;
     font-size: 14px;
-
   }
   
   footer h4 {
@@ -1536,10 +1551,6 @@ font-size: 20px;
     gap: 0;
   }
 
-  .footer-section{
-    width: 300px;
-  }
-  
 }
 
 

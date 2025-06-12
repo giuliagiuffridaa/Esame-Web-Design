@@ -50,7 +50,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
   }
   
@@ -161,7 +161,10 @@
   
   }
 
-  
+  .nav-bar a.active {
+    text-decoration: underline;
+}
+
 
 
 .marchio-link {
@@ -242,6 +245,14 @@
   .contenitore .titolo{
     width: 100%;
     max-width: 700px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #a397c9;
+  }
+
+  .contenitore .titolo2{
+    width: 100%;
+    max-width: 700px;
     margin-top: 80px;
     margin-bottom: 40px;
     color: #a397c9;
@@ -257,14 +268,140 @@
   }
   
  
+.titolo2 h2{
+  padding: 40px 110px;
+  color: #a397c9;
+}
 
 
  /* contenitore-blocco */
-   
+/*    
   .contenitore-blocco{
+    display: flex;
     width: 100%;
+    max-width: 1400px;
     margin-bottom: 200px;
+    padding: 20px 110px;
+    gap: 180px;
+  
   }
+  
+
+
+ .immagine-box {
+  width: 100%;   
+  max-width: 800px;
+
+}
+
+.immagine-box img {
+  height: 400px;
+  object-fit: cover;      
+  filter: brightness(80%);
+  border-radius: 10px;
+}
+
+
+
+.paragrafo{
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 4px 10px #a397c9;
+  padding: 30px 60px;
+}
+
+
+
+.link{
+  margin-top: 70px;
+  margin-bottom: 0;
+}
+
+ .link a{
+  font-size: 22px;
+  margin-top: 30px;
+  color: #917edb;
+  font-weight: 700;
+ }
+
+
+ .link a:hover{
+  color: #a397c9; 
+  transition: color 0.2s ease;
+ }
+  
+ .titolo h1{
+   font-size: 24px;
+   color: #a397c9;
+   margin-bottom: 30px;
+   margin-top: 20px;
+  }
+ 
+
+
+  .anteprima p{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 1.4;
+  }  */
+
+  .contenitore-blocco{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    margin-bottom: 200px;
+    padding: 40px 60px;
+    gap: 100px;
+    box-shadow: 0 4px 12px #a397c9;
+  
+  }
+  
+  
+ 
+
+ .immagine-box {
+  width: 100%;         
+}
+
+.immagine-box img {
+  width: 550px;
+  height: 300px;
+  object-fit: cover;      
+  filter: brightness(80%);
+}
+
+ .link a{
+  max-width: 700px;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #917edb;
+  font-weight: 700;
+ }
+
+ .link a:hover{
+  color: #a397c9; 
+  transition: color 0.2s ease;
+ }
+  
+ .titolo h1{
+   font-size: 24px;
+   color: #a397c9;
+   margin-bottom: 30px;
+  }
+ 
+
+  .anteprima p{
+    max-width: 800px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.4;
+  } 
+
+/* testo */
 
 
   .testo p{
@@ -281,40 +418,26 @@
   }
   
 
-  
-  
-  .titolo{
-   margin-bottom: 20px;
-   max-width: 700px;
-   padding: 20px 80px; 
-   margin-top: 100px;
-  }
-  
-
-   
-   
-   
-  .titolo h1 a{
-    font-size: 24px;
-    color: #a397c9;
-   }
-  
-
    .titolo h2{
     color: #917edb;
     width: 400px;
    }
   
    .titolo a:hover{
-    color: #917edb; 
+    color: #a397c9; 
     transition: color 0.2s ease;
   } 
+
+
+  .titolo-card a:hover{
+    color: #a397c9; 
+    transition: color 0.2s ease;
+  } 
+
   .titolo2 a:hover{
-    color: #917edb; 
+    color: #a397c9; 
     transition: color 0.2s ease;
   } 
-  
-  
   
   
   .immagini-materiali{
@@ -326,13 +449,13 @@
     margin-bottom: 200px;
   }
 
-.card2 img {
-  max-width: 100%;
-  height:350px;
-  display: block;
-  object-fit: cover;
-  margin-bottom: 80px;
-}
+   .card2 img {
+    max-width: 100%;
+    height:350px;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 80px;
+   }
 
   
   /* card */
@@ -373,11 +496,10 @@
   }
 
 
-  
-
   .card p{
     margin-top: 40px;
   }
+
 
   .card p:hover{
     color: #a397c9; 
@@ -393,35 +515,12 @@
   
   }
   
-  
-  
-  
-  
-  /* immaginegrande */
-  
-  .immagine-box {
-    width: 100%;         
-    overflow: hidden;
-    margin-top: 40px;
-  }
-  
-  .immagine-box img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;      
-    max-height: 550px;
-    filter: brightness(80%);
-  }
-  
-  .immagine-box:hover {
-    transform: scale(1.04);
-    box-shadow: 0 10px 16px #a397c9;
-    cursor: pointer;
-    transition: transform 0.4s ease;
 
-  }
   
+  .contenitore-blocco2{
+    width: 100%;
+    margin-bottom: 30px;
+  }
 
 
   
@@ -431,8 +530,7 @@
   .box {
     width: 100%;         
     overflow: hidden;
-    margin-bottom: 100px;    
-
+    margin-bottom: 150px;    
   }
   
   .box img {
@@ -476,8 +574,8 @@
   .coppia-immagini img{
     width: 100%;
     max-width: 500px;
-    margin-top: 150px;
-    margin-bottom: 100px;
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
   
 
@@ -507,7 +605,7 @@
   
   .titolo-sticky h2,h4 {
     font-size: 24px;
-    color: #917edb;
+    color: #a397c9;
   }
   
   .contenuti-scrollabili {
@@ -674,7 +772,7 @@
   .info-contenitore {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-size: cover;
     background-position: center;
     color: white;
@@ -688,7 +786,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
   }
 
@@ -810,21 +908,17 @@
 }
 
 
-
-  
-.image-contenitore {
+.contenitore-blocco{
   display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 500px;
-  width: 100%;
-  z-index: 0;}
+  max-width: 450px;
+}
+
+
 
   .image-contenitore img {
     object-fit: cover;
-    height: 500px;
-    width: 100%;}
+    width: 100%;
+  }
 
 
 .contenitore .testo{
@@ -841,6 +935,14 @@
 
 
 .contenitore .titolo{
+  width: 100%;
+  max-width: 450px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.contenitore .titolo2{
   margin: 0 auto;
   width: 100%;
   max-width: 450px;
@@ -857,21 +959,30 @@
   margin-bottom: 10px;
 }
 
-.titolo h2{
-  color: #917edb;
+.titolo2 h2{
+  margin: 0 auto;
+  color: #a397c9;
   width: 100%;
   font-size: 20px;
+  padding: 0;
  }
 
 
   
  .titolo{
+  margin-bottom: 20px;
+  max-width: 400px;
+  padding: 0; 
+ }
+
+ .titolo2{
   margin: 0 auto;
   margin-bottom: 20px;
   max-width: 400px;
   padding: 0; 
   margin-top: 100px;
  }
+
 
 .testo h3{
   font-size: 20px;
@@ -893,8 +1004,8 @@
 }
 
 
- .titolo h1 a{
-  margin-top: 60px;
+ .titolo h1{
+  margin-top: 10px;
   font-size: 20px;
  }
 
@@ -905,10 +1016,8 @@
 
 
 .titolo{
-  margin: 0 auto;
   margin-bottom: 20px;
   padding: 0; 
-  margin-top: 100px;
  }
  
   
@@ -920,9 +1029,80 @@
 
 
 .contenitore-blocco img{
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
+
+
+/* anteprima */
+
+
+ /* contenitore-blocco */
+   
+ .contenitore-blocco{
+  display: grid;
+  grid-template-columns: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  padding: 10px 30px;
+  gap: 0;
+}
+
+
+
+.immagine-box img {
+width: 450px;
+height: 280px;
+object-fit: cover;      
+filter: brightness(90%);
+margin-top: 70px;
+margin-bottom: 40px;
+}
+
+.paragrafo{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+.link{
+  margin-top: 40px;
+}
+
+.link a{
+max-width: 300px;
+font-size: 20px;
+color: #917edb;
+font-weight: 700;
+}
+
+
+.link a:hover{
+color: #a397c9; 
+transition: color 0.2s ease;
+}
+
+.titolo h1{
+ font-size: 20px;
+ color: #a397c9;
+ margin-bottom: 30px;
+}
+
+
+
+.anteprima p{
+  max-width: 700px;
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+
+
+/* sticky */
 
   .sticky {
     margin: 0 auto;
@@ -1008,31 +1188,9 @@
 
 
 
-  /* immaginegrande */
-  
-  .immagine-box {
-    width: 100%;         
-    overflow: hidden;
-    margin-top: 30px;
-  }
-  
-  .immagine-box img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;      
-    max-height: 540px;
-    filter: brightness(80%);
-    margin-bottom: 0;
-  }
-  
-  .immagine-box:hover {
-    transform: scale(1.03);
-    box-shadow: 0 6px 10px #a397c9;
-    cursor: pointer;
-    transition: transform 0.3s ease;
 
-  }
+  
+
 
   
 /* coppia */
@@ -1095,7 +1253,7 @@ margin-bottom: 50px;
   font-family: sans-serif;
   border-radius: 10px;
   margin-bottom: 60px; 
-  max-width: 300px;
+  max-width: 400px;
 }
 
 
@@ -1193,7 +1351,7 @@ margin-bottom: 50px;
       left: 0;
       height: 100%;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.5);
       z-index: 1;
     }
   
@@ -1328,11 +1486,21 @@ margin-bottom: 50px;
   .contenitore .titolo{
     margin: 0 auto;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
     padding: 0;
   }
   
+
+
+  .contenitore .titolo2{
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
   .contenitore .titolo-card{
     margin: 0 auto;
     width: 100%;
@@ -1363,7 +1531,6 @@ margin-bottom: 50px;
   
   
    .titolo h1{
-    margin: 0 auto;
     width: 100%;
     max-width: 350px;
     padding: 0;
@@ -1374,7 +1541,7 @@ margin-bottom: 50px;
     font-size: 18px;
   }
   
-  .titolo h1 a {
+  .titolo h1{
     font-size: 18px;
   }
   
@@ -1386,7 +1553,7 @@ margin-bottom: 50px;
   
   
   
-  .titolo h2{
+  .titolo2 h2{
     margin: 0 auto;
     width: 100%;
     max-width: 300px;
@@ -1413,35 +1580,66 @@ margin-bottom: 50px;
   }
   
   
+/* anteprima */
+
+
+ /* contenitore-blocco */
+   
+ .contenitore-blocco{
+  display: grid;
+  grid-template-columns: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 100px;
+  padding: 0 30px;
+  gap: 0;
+}
+
+
+
+.immagine-box img {
+width: 400px;
+height: 200px;
+object-fit: cover;      
+filter: brightness(90%);
+margin-top: 30px;
+}
+
+
+
+.link a{
+max-width: 300px;
+font-size: 20px;
+margin-bottom: 20px;
+color: #917edb;
+font-weight: 700;
+}
+
+
+.link a:hover{
+color: #a397c9; 
+transition: color 0.2s ease;
+}
+
+.titolo h1{
+ font-size: 20px;
+ color: #a397c9;
+ margin-bottom: 30px;
+}
+
+
+
+.anteprima p{
+  max-width: 700px;
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
   
   
-    /* immaginegrande */
-    
-    .immagine-box {
-      width: 100%;         
-      overflow: hidden;
-      margin-top: 30px;
-    }
-    
-    .immagine-box img {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: cover;      
-      max-height: 260px;
-      filter: brightness(80%);
-      margin-bottom: 0;
-    }
-    
-    .immagine-box:hover {
-      transform: scale(1.03);
-      box-shadow: 0 6px 10px #a397c9;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-  
-    }
-  
-    .contenitore-blocco{
+    .contenitore-blocco2{
       width: 100%;
       margin-bottom: 50px;
     }
@@ -1686,7 +1884,7 @@ margin-bottom: 50px;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
   }
 
@@ -1821,6 +2019,15 @@ font-size: 20px;
 .contenitore .titolo{
   margin: 0 auto;
   width: 100%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+
+.contenitore .titolo2{
+  margin: 0 auto;
+  width: 100%;
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 0;
@@ -1867,7 +2074,7 @@ font-size: 20px;
   font-size: 18px;
 }
 
-.titolo h1 a {
+.titolo h1{
   font-size: 18px;
 }
 
@@ -1879,7 +2086,7 @@ font-size: 20px;
 
 
 
-.titolo h2{
+.titolo2 h2{
   margin: 0 auto;
   width: 100%;
   max-width: 300px;
@@ -1902,39 +2109,78 @@ font-size: 20px;
 .coppia-immagini img{
   max-width: 300px;
   margin-top: 50px;
-    margin-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+
+/* anteprima */
+
+
+ /* contenitore-blocco */
+   
+ .contenitore-blocco{
+  display: grid;
+  grid-template-columns: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 70px;
+  padding: 10px 20px;
+  gap: 0;
+}
+
+
+
+.immagine-box img {
+width: 350px;
+height: 200px;
+object-fit: cover;      
+filter: brightness(80%);
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+.link{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.link a{
+max-width: 200px;
+font-size: 16px;
+margin-bottom: 10px;
+color: #917edb;
+font-weight: 700;
+}
+
+
+.link a:hover{
+color: #a397c9; 
+transition: color 0.2s ease;
+}
+
+.titolo h1{
+ font-size: 16px;
+ color: #a397c9;
+ margin-bottom: 30px;
+}
+
+
+
+.anteprima p{
+  max-width: 700px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.4;
 }
 
 
 
 
-  /* immaginegrande */
-  
-  .immagine-box {
-    width: 100%;         
-    overflow: hidden;
-    margin-top: 30px;
-  }
-  
-  .immagine-box img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;      
-    max-height: 260px;
-    filter: brightness(80%);
-    margin-bottom: 0;
-  }
-  
-  .immagine-box:hover {
-    transform: scale(1.03);
-    box-shadow: 0 6px 10px #a397c9;
-    cursor: pointer;
-    transition: transform 0.3s ease;
 
-  }
 
-  .contenitore-blocco{
+
+  .contenitore-blocco2{
     width: 100%;
     margin-bottom: 50px;
   }
